@@ -23,10 +23,12 @@ mvc는 서블릿의 블로킹 I/O를 사용하는데,,
   - tomcat은 아마 10개..?
 
 
-### 1.2 Reactive Core
-#### HttpHandler vs WebHandler API 
-->  WebHandler API 사용함.
--> @Controller 사용하지 않고 config에서 router에 handler mapping 하는 방식을 사용했다.   
-간단하고 관리포인트가 DispatcherHandler 하나라 편함.   
-모든 endpoint들을 메서드별 권한까지 다 한 파일에서 관리해서 좋았다.   
-<img src="img_1.png" width="600"/>
+### 1.5 Functional Endpoints
+- 함수형 모델과 어노테이션 모델 중 함수형 모델 사용함.
+  ~~HttpHandler vs WebHandler API 중에서 WebHandler API 사용함.~~   
+- functional endpoint를 사용했다. 
+  - @Controller 사용하지 않고 config에서 router에 handler mapping 하는 방식을 사용했다.   
+  - 간단하고 관리포인트가 DispatcherHandler 하나라 편함. 모든 endpoint들을 메서드별 권한까지 다 한 파일에서 관리해서 좋았다.   
+  <img src="img_1.png" width="600"/>
+- 
+
